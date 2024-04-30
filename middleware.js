@@ -87,8 +87,8 @@ export function middleware(request) {
 
 export const config = {
     matcher: [
-      // Skip all internal paths (_next)
-      '/((?!_next).*)',
+      // Skip all internal paths (_next, assets, api)
+      '/((?!api|assets|.*\\..*|_next).*)',
       // Optional: only run on root (/) URL
       // '/'
     ],
